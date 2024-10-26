@@ -11,7 +11,7 @@ namespace Tyuiu.KornevRM.Sprint4.Task2.V4.Lib
 
                 if (array[i] % 2 == 0)
                 {
-                  
+                    continue;
                 }
                 else
                 {
