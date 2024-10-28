@@ -15,7 +15,7 @@ namespace Tyuiu.KornevRM.Sprint4.Task4.V2.Test
                                           { 7, 5, 7, 7, 8 },
                                           { 2, 2, 4, 7, 9 } };
             int[,] res = ds.Calculate(matrix);
-            int wait = 9;
+            int[,] wait;
             Assert.AreEqual(res, wait);
 
         }
