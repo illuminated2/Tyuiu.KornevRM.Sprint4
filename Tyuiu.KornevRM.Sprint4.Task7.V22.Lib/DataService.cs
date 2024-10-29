@@ -7,18 +7,22 @@ namespace Tyuiu.KornevRM.Sprint4.Task7.V22.Lib
         {
             int[,] mtrx = new int[n, m];
             int p = 1;
-            int count = 0;
+            int index = 0;
+
             for (int i = 0; i < n; i++)
-            {
                 for (int j = 0; j < m; j++)
                 {
-                    mtrx[i, j] = int.Parse(value[count].ToString());
-                    if(mtrx[i, j]%2== 0)
+                    mtrx[i, j] = int.Parse(value.Substring(i * m + j, 1));
+                }
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < m; j++)
+                {
+                    if (mtrx[i, j] % 2 == 0)
                     {
-                        p *= mtrx[i, j];
+                        p = p * mtrx[i, j];
                     }
                 }
-            }
+           
             return p;
         }
     }
